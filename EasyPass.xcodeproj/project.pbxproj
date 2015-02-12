@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */; };
+		5C0515141A8CCF7500CE8A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515131A8CCF7500CE8A6D /* ViewController.swift */; };
+		5C0515171A8CCF7500CE8A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515151A8CCF7500CE8A6D /* Main.storyboard */; };
+		5C0515191A8CCF7500CE8A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515181A8CCF7500CE8A6D /* Images.xcassets */; };
+		5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */; };
+		5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C0515221A8CCF7500CE8A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C0515041A8CCF7400CE8A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C05150B1A8CCF7500CE8A6D;
+			remoteInfo = EasyPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C05150C1A8CCF7500CE8A6D /* EasyPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0515101A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C0515131A8CCF7500CE8A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C0515161A8CCF7500CE8A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C0515181A8CCF7500CE8A6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5C05151B1A8CCF7500CE8A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5C0515211A8CCF7500CE8A6D /* EasyPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0515261A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPassTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C0515091A8CCF7500CE8A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C05151E1A8CCF7500CE8A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C0515031A8CCF7400CE8A6D = {
+			isa = PBXGroup;
+			children = (
+				5C05150E1A8CCF7500CE8A6D /* EasyPass */,
+				5C0515241A8CCF7500CE8A6D /* EasyPassTests */,
+				5C05150D1A8CCF7500CE8A6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C05150D1A8CCF7500CE8A6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C05150C1A8CCF7500CE8A6D /* EasyPass.app */,
+				5C0515211A8CCF7500CE8A6D /* EasyPassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C05150E1A8CCF7500CE8A6D /* EasyPass */ = {
+			isa = PBXGroup;
+			children = (
+				5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */,
+				5C0515131A8CCF7500CE8A6D /* ViewController.swift */,
+				5C0515151A8CCF7500CE8A6D /* Main.storyboard */,
+				5C0515181A8CCF7500CE8A6D /* Images.xcassets */,
+				5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */,
+				5C05150F1A8CCF7500CE8A6D /* Supporting Files */,
+			);
+			path = EasyPass;
+			sourceTree = "<group>";
+		};
+		5C05150F1A8CCF7500CE8A6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C0515101A8CCF7500CE8A6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C0515241A8CCF7500CE8A6D /* EasyPassTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */,
+				5C0515251A8CCF7500CE8A6D /* Supporting Files */,
+			);
+			path = EasyPassTests;
+			sourceTree = "<group>";
+		};
+		5C0515251A8CCF7500CE8A6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C0515261A8CCF7500CE8A6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C05150B1A8CCF7500CE8A6D /* EasyPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C05152B1A8CCF7500CE8A6D /* Build configuration list for PBXNativeTarget "EasyPass" */;
+			buildPhases = (
+				5C0515081A8CCF7500CE8A6D /* Sources */,
+				5C0515091A8CCF7500CE8A6D /* Frameworks */,
+				5C05150A1A8CCF7500CE8A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPass;
+			productName = EasyPass;
+			productReference = 5C05150C1A8CCF7500CE8A6D /* EasyPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C0515201A8CCF7500CE8A6D /* EasyPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C05152E1A8CCF7500CE8A6D /* Build configuration list for PBXNativeTarget "EasyPassTests" */;
+			buildPhases = (
+				5C05151D1A8CCF7500CE8A6D /* Sources */,
+				5C05151E1A8CCF7500CE8A6D /* Frameworks */,
+				5C05151F1A8CCF7500CE8A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C0515231A8CCF7500CE8A6D /* PBXTargetDependency */,
+			);
+			name = EasyPassTests;
+			productName = EasyPassTests;
+			productReference = 5C0515211A8CCF7500CE8A6D /* EasyPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C0515041A8CCF7400CE8A6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Evgeny;
+				TargetAttributes = {
+					5C05150B1A8CCF7500CE8A6D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5C0515201A8CCF7500CE8A6D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5C05150B1A8CCF7500CE8A6D;
+					};
+				};
+			};
+			buildConfigurationList = 5C0515071A8CCF7400CE8A6D /* Build configuration list for PBXProject "EasyPass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C0515031A8CCF7400CE8A6D;
+			productRefGroup = 5C05150D1A8CCF7500CE8A6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C05150B1A8CCF7500CE8A6D /* EasyPass */,
+				5C0515201A8CCF7500CE8A6D /* EasyPassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C05150A1A8CCF7500CE8A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0515171A8CCF7500CE8A6D /* Main.storyboard in Resources */,
+				5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */,
+				5C0515191A8CCF7500CE8A6D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C05151F1A8CCF7500CE8A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C0515081A8CCF7500CE8A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0515141A8CCF7500CE8A6D /* ViewController.swift in Sources */,
+				5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C05151D1A8CCF7500CE8A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C0515231A8CCF7500CE8A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C05150B1A8CCF7500CE8A6D /* EasyPass */;
+			targetProxy = 5C0515221A8CCF7500CE8A6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C0515151A8CCF7500CE8A6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0515161A8CCF7500CE8A6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C05151B1A8CCF7500CE8A6D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C0515291A8CCF7500CE8A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C05152A1A8CCF7500CE8A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C05152C1A8CCF7500CE8A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5C05152D1A8CCF7500CE8A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5C05152F1A8CCF7500CE8A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EasyPassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyPass.app/EasyPass";
+			};
+			name = Debug;
+		};
+		5C0515301A8CCF7500CE8A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EasyPassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyPass.app/EasyPass";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C0515071A8CCF7400CE8A6D /* Build configuration list for PBXProject "EasyPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0515291A8CCF7500CE8A6D /* Debug */,
+				5C05152A1A8CCF7500CE8A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C05152B1A8CCF7500CE8A6D /* Build configuration list for PBXNativeTarget "EasyPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C05152C1A8CCF7500CE8A6D /* Debug */,
+				5C05152D1A8CCF7500CE8A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5C05152E1A8CCF7500CE8A6D /* Build configuration list for PBXNativeTarget "EasyPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C05152F1A8CCF7500CE8A6D /* Debug */,
+				5C0515301A8CCF7500CE8A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C0515041A8CCF7400CE8A6D /* Project object */;
+}
