@@ -13,6 +13,7 @@
 		5C0515191A8CCF7500CE8A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515181A8CCF7500CE8A6D /* Images.xcassets */; };
 		5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */; };
 		5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */; };
+		5C0515321A8CD9DA00CE8A6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		5C0515211A8CCF7500CE8A6D /* EasyPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0515261A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPassTests.swift; sourceTree = "<group>"; };
+		5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0515321A8CD9DA00CE8A6D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		5C0515031A8CCF7400CE8A6D = {
 			isa = PBXGroup;
 			children = (
+				5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */,
 				5C05150E1A8CCF7500CE8A6D /* EasyPass */,
 				5C0515241A8CCF7500CE8A6D /* EasyPassTests */,
 				5C05150D1A8CCF7500CE8A6D /* Products */,
