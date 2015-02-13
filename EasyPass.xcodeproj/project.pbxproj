@@ -14,6 +14,8 @@
 		5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */; };
 		5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */; };
 		5C0515321A8CD9DA00CE8A6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */; };
+		5C8D86361A8E0EC200638AD9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D861C1A8E0E5B00638AD9 /* Quick.framework */; };
+		5C8D86381A8E0EE300638AD9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D862F1A8E0E8F00638AD9 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,76 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5C05150B1A8CCF7500CE8A6D;
 			remoteInfo = EasyPass;
+		};
+		5C8D861B1A8E0E5B00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		5C8D861D1A8E0E5B00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		5C8D861F1A8E0E5B00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
+			remoteInfo = "QuickFocused-OSXTests";
+		};
+		5C8D86211A8E0E5B00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		5C8D86231A8E0E5B00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		5C8D86251A8E0E5B00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
+			remoteInfo = "QuickFocused-iOSTests";
+		};
+		5C8D862E1A8E0E8F00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		5C8D86301A8E0E8F00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		5C8D86321A8E0E8F00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		5C8D86341A8E0E8F00638AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +110,8 @@
 		5C0515261A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPassTests.swift; sourceTree = "<group>"; };
 		5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8D86381A8E0EE300638AD9 /* Nimble.framework in Frameworks */,
+				5C8D86361A8E0EC200638AD9 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +178,8 @@
 		5C0515241A8CCF7500CE8A6D /* EasyPassTests */ = {
 			isa = PBXGroup;
 			children = (
+				5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */,
+				5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */,
 				5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */,
 				5C0515251A8CCF7500CE8A6D /* Supporting Files */,
 			);
@@ -114,6 +192,30 @@
 				5C0515261A8CCF7500CE8A6D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C8D86131A8E0E5A00638AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C8D861C1A8E0E5B00638AD9 /* Quick.framework */,
+				5C8D861E1A8E0E5B00638AD9 /* Quick-OSXTests.xctest */,
+				5C8D86201A8E0E5B00638AD9 /* QuickFocused-OSXTests.xctest */,
+				5C8D86221A8E0E5B00638AD9 /* Quick.framework */,
+				5C8D86241A8E0E5B00638AD9 /* Quick-iOSTests.xctest */,
+				5C8D86261A8E0E5B00638AD9 /* QuickFocused-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C8D86281A8E0E8F00638AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C8D862F1A8E0E8F00638AD9 /* Nimble.framework */,
+				5C8D86311A8E0E8F00638AD9 /* NimbleTests.xctest */,
+				5C8D86331A8E0E8F00638AD9 /* Nimble.framework */,
+				5C8D86351A8E0E8F00638AD9 /* NimbleTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +285,16 @@
 			mainGroup = 5C0515031A8CCF7400CE8A6D;
 			productRefGroup = 5C05150D1A8CCF7500CE8A6D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5C8D86281A8E0E8F00638AD9 /* Products */;
+					ProjectRef = 5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = 5C8D86131A8E0E5A00638AD9 /* Products */;
+					ProjectRef = 5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C05150B1A8CCF7500CE8A6D /* EasyPass */,
@@ -190,6 +302,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5C8D861C1A8E0E5B00638AD9 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 5C8D861B1A8E0E5B00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D861E1A8E0E5B00638AD9 /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = 5C8D861D1A8E0E5B00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86201A8E0E5B00638AD9 /* QuickFocused-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-OSXTests.xctest";
+			remoteRef = 5C8D861F1A8E0E5B00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86221A8E0E5B00638AD9 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 5C8D86211A8E0E5B00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86241A8E0E5B00638AD9 /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = 5C8D86231A8E0E5B00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86261A8E0E5B00638AD9 /* QuickFocused-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-iOSTests.xctest";
+			remoteRef = 5C8D86251A8E0E5B00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D862F1A8E0E8F00638AD9 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 5C8D862E1A8E0E8F00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86311A8E0E8F00638AD9 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 5C8D86301A8E0E8F00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86331A8E0E8F00638AD9 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 5C8D86321A8E0E8F00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C8D86351A8E0E8F00638AD9 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 5C8D86341A8E0E8F00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5C05150A1A8CCF7500CE8A6D /* Resources */ = {
