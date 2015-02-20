@@ -12,7 +12,6 @@
 		5C0515171A8CCF7500CE8A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515151A8CCF7500CE8A6D /* Main.storyboard */; };
 		5C0515191A8CCF7500CE8A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515181A8CCF7500CE8A6D /* Images.xcassets */; };
 		5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */; };
-		5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */; };
 		5C0515321A8CD9DA00CE8A6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */; };
 		5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */; };
 		5C10E0D41A8E3002000E4993 /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */; };
@@ -113,7 +112,6 @@
 		5C05151B1A8CCF7500CE8A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5C0515211A8CCF7500CE8A6D /* EasyPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0515261A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPassTests.swift; sourceTree = "<group>"; };
 		5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyPassViewControllerTests.swift; sourceTree = "<group>"; };
 		5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureDevice.swift; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 			children = (
 				5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */,
 				5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */,
-				5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */,
 				5C0515251A8CCF7500CE8A6D /* Supporting Files */,
 				5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */,
 				5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */,
@@ -427,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */,
 				5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */,
 				5CA85E7E1A96660700CC804F /* CaptureDeviceTests.swift in Sources */,
 				5CEF4FB31A9779180092BA28 /* QRCodeFrameViewTests.swift in Sources */,
