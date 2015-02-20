@@ -188,8 +188,6 @@
 		5C0515241A8CCF7500CE8A6D /* EasyPassTests */ = {
 			isa = PBXGroup;
 			children = (
-				5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */,
-				5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */,
 				5C0515251A8CCF7500CE8A6D /* Supporting Files */,
 				5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */,
 				5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */,
@@ -201,6 +199,8 @@
 		5C0515251A8CCF7500CE8A6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */,
+				5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */,
 				5C0515261A8CCF7500CE8A6D /* Info.plist */,
 			);
 			name = "Supporting Files";
