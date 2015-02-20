@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */; };
-		5C0515141A8CCF7500CE8A6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515131A8CCF7500CE8A6D /* ViewController.swift */; };
+		5C0515141A8CCF7500CE8A6D /* EasyPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515131A8CCF7500CE8A6D /* EasyPassViewController.swift */; };
 		5C0515171A8CCF7500CE8A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515151A8CCF7500CE8A6D /* Main.storyboard */; };
 		5C0515191A8CCF7500CE8A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0515181A8CCF7500CE8A6D /* Images.xcassets */; };
 		5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */; };
 		5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */; };
 		5C0515321A8CD9DA00CE8A6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */; };
+		5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */; };
+		5C10E0D41A8E3002000E4993 /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */; };
+		5C2AA5DE1A95DDBF0093C5EE /* QRCodeFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */; };
 		5C8D86361A8E0EC200638AD9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D861C1A8E0E5B00638AD9 /* Quick.framework */; };
 		5C8D86381A8E0EE300638AD9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D862F1A8E0E8F00638AD9 /* Nimble.framework */; };
+		5CA85E7E1A96660700CC804F /* CaptureDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */; };
+		5CEF4FB31A9779180092BA28 /* QRCodeFrameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +107,7 @@
 		5C05150C1A8CCF7500CE8A6D /* EasyPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0515101A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C0515131A8CCF7500CE8A6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C0515131A8CCF7500CE8A6D /* EasyPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPassViewController.swift; sourceTree = "<group>"; };
 		5C0515161A8CCF7500CE8A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C0515181A8CCF7500CE8A6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C05151B1A8CCF7500CE8A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -110,8 +115,13 @@
 		5C0515261A8CCF7500CE8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPassTests.swift; sourceTree = "<group>"; };
 		5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyPassViewControllerTests.swift; sourceTree = "<group>"; };
+		5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureDevice.swift; sourceTree = "<group>"; };
+		5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeFrameView.swift; sourceTree = "<group>"; };
 		5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureDeviceTests.swift; sourceTree = "<group>"; };
+		5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeFrameViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */,
-				5C0515131A8CCF7500CE8A6D /* ViewController.swift */,
+				5C0515131A8CCF7500CE8A6D /* EasyPassViewController.swift */,
+				5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */,
+				5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */,
 				5C0515151A8CCF7500CE8A6D /* Main.storyboard */,
 				5C0515181A8CCF7500CE8A6D /* Images.xcassets */,
 				5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */,
@@ -182,6 +194,9 @@
 				5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */,
 				5C0515271A8CCF7500CE8A6D /* EasyPassTests.swift */,
 				5C0515251A8CCF7500CE8A6D /* Supporting Files */,
+				5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */,
+				5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */,
+				5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */,
 			);
 			path = EasyPassTests;
 			sourceTree = "<group>";
@@ -401,8 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C0515141A8CCF7500CE8A6D /* ViewController.swift in Sources */,
+				5C10E0D41A8E3002000E4993 /* CaptureDevice.swift in Sources */,
+				5C0515141A8CCF7500CE8A6D /* EasyPassViewController.swift in Sources */,
 				5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */,
+				5C2AA5DE1A95DDBF0093C5EE /* QRCodeFrameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +428,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0515281A8CCF7500CE8A6D /* EasyPassTests.swift in Sources */,
+				5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */,
+				5CA85E7E1A96660700CC804F /* CaptureDeviceTests.swift in Sources */,
+				5CEF4FB31A9779180092BA28 /* QRCodeFrameViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
