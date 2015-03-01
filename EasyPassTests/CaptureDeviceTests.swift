@@ -41,6 +41,11 @@ class CaptureDeviceTests: QuickSpec {
             it("should provide previewLayer") {
                 expect(сaptureDevice.previewLayer).to(beAKindOf(AVCaptureVideoPreviewLayer))
             }
+            
+            it("should should conform protocol") {
+//                expect(сaptureDevice).to(beAKindOf(AVCaptureMetadataOutputObjectsDelegate))
+                expect(сaptureDevice.respondsToSelector("captureOutput")).toNot(beNil())
+            }
         }
     }
 }

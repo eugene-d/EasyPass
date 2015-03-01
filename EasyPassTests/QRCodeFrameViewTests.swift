@@ -17,7 +17,7 @@ class QRCodeFrameViewTests: QuickSpec {
             }
             
             it("should shoud return UIView layer") {
-                let layer = frameView.highlightedBox();
+                let layer = frameView.highlightBox();
                 expect(layer).to(beAKindOf(UIView))
             }
         }
