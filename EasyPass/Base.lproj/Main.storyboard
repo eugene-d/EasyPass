@@ -15,11 +15,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWs-KJ-fcd">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="3jU-R0-KhE">
+                                        <barButtonItem key="rightBarButtonItem" title="Scan Code" id="lHo-Y1-tQD">
+                                            <connections>
+                                                <action selector="scanning:" destination="BYZ-38-t0r" id="DOv-iC-6VI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HWs-KJ-fcd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" symbolic="YES" id="88l-qa-tMn"/>
+                            <constraint firstAttribute="trailing" secondItem="HWs-KJ-fcd" secondAttribute="trailing" id="ByE-Oq-6cY"/>
+                            <constraint firstItem="HWs-KJ-fcd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VEf-0r-Poh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="tWo-uU-0b5" kind="show" identifier="Scanning" id="8Ie-By-zok"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-549" y="324"/>
+        </scene>
+        <!--Scannin History-->
+        <scene sceneID="qyP-Uz-X3z">
+            <objects>
+                <viewController title="Scannin History" id="jDc-1M-Xzt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Bn-VT-nzX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZWw-jm-EDd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ARF-JT-1M3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="N5d-JF-owg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TR-vF-1dN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="769"/>
+        </scene>
+        <!--Scanning Code-->
+        <scene sceneID="XYP-AD-Dcp">
+            <objects>
+                <viewController title="Scanning Code" id="yel-ce-cdR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bko-rK-0JI"/>
+                        <viewControllerLayoutGuide type="bottom" id="qxI-La-WIE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gzS-Of-5Ox">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="nLi-OY-NCN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODr-mV-1fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="-27"/>
+        </scene>
+        <!--Scaner-->
+        <scene sceneID="fKr-ji-eoX">
+            <objects>
+                <tabBarController title="Scaner" id="tWo-uU-0b5" customClass="ScanningController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BYU-zW-krs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yel-ce-cdR" kind="relationship" relationship="viewControllers" id="ev1-Q1-jy2"/>
+                        <segue destination="jDc-1M-Xzt" kind="relationship" relationship="viewControllers" id="mfc-QZ-WSD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yod-XH-wuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="324"/>
         </scene>
     </scenes>
 </document>

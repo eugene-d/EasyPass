@@ -57,6 +57,10 @@ class EasyPassViewControllerTests: QuickSpec {
                 expect((viewContrller.highlightQRCodeFrameView as
                     FakeQRCodeFrameView).higligtedBoxWasCalled).to(beTruthy())
             }
+            
+            it("should have scanning handler action") {
+                expect(viewContrller.respondsToSelector("scanning:")).to(beTruthy())
+            }
         }
     }
 }
