@@ -15,6 +15,8 @@
 		5C0515321A8CD9DA00CE8A6D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */; };
 		5C0AD7881AA3A96600D9E5F3 /* ScanningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AD7871AA3A96600D9E5F3 /* ScanningController.swift */; };
 		5C0AD7941AA4F34C00D9E5F3 /* ScanningControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AD7931AA4F34B00D9E5F3 /* ScanningControllerTests.swift */; };
+		5C0AD7961AA4FAE700D9E5F3 /* ScanningCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AD7951AA4FAE700D9E5F3 /* ScanningCodeController.swift */; };
+		5C0AD7981AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0AD7971AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift */; };
 		5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */; };
 		5C10E0D41A8E3002000E4993 /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */; };
 		5C2AA5DE1A95DDBF0093C5EE /* QRCodeFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */; };
@@ -117,6 +119,8 @@
 		5C0515311A8CD9DA00CE8A6D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5C0AD7871AA3A96600D9E5F3 /* ScanningController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningController.swift; sourceTree = "<group>"; };
 		5C0AD7931AA4F34B00D9E5F3 /* ScanningControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningControllerTests.swift; sourceTree = "<group>"; };
+		5C0AD7951AA4FAE700D9E5F3 /* ScanningCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningCodeController.swift; sourceTree = "<group>"; };
+		5C0AD7971AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningCodeControllerTests.swift; sourceTree = "<group>"; };
 		5C10E0C71A8E22DA000E4993 /* EasyPassViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyPassViewControllerTests.swift; sourceTree = "<group>"; };
 		5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureDevice.swift; sourceTree = "<group>"; };
 		5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeFrameView.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				5C0515111A8CCF7500CE8A6D /* AppDelegate.swift */,
 				5C0515131A8CCF7500CE8A6D /* EasyPassViewController.swift */,
 				5C0AD7871AA3A96600D9E5F3 /* ScanningController.swift */,
+				5C0AD7951AA4FAE700D9E5F3 /* ScanningCodeController.swift */,
 				5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */,
 				5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */,
 				5C0515151A8CCF7500CE8A6D /* Main.storyboard */,
@@ -198,6 +203,7 @@
 				5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */,
 				5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */,
 				5C0AD7931AA4F34B00D9E5F3 /* ScanningControllerTests.swift */,
+				5C0AD7971AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift */,
 			);
 			path = EasyPassTests;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 				5C10E0D41A8E3002000E4993 /* CaptureDevice.swift in Sources */,
 				5C0AD7881AA3A96600D9E5F3 /* ScanningController.swift in Sources */,
 				5C0515141A8CCF7500CE8A6D /* EasyPassViewController.swift in Sources */,
+				5C0AD7961AA4FAE700D9E5F3 /* ScanningCodeController.swift in Sources */,
 				5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */,
 				5C2AA5DE1A95DDBF0093C5EE /* QRCodeFrameView.swift in Sources */,
 			);
@@ -431,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0AD7981AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift in Sources */,
 				5C0AD7941AA4F34C00D9E5F3 /* ScanningControllerTests.swift in Sources */,
 				5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */,
 				5CA85E7E1A96660700CC804F /* CaptureDeviceTests.swift in Sources */,

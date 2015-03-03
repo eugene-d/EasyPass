@@ -20,7 +20,7 @@ public class CaptureDevice: NSObject, AVCaptureMetadataOutputObjectsDelegate {
      @brief
         Strored propery for EasyPassViewController instance.
     */
-    public weak var captureOutputDestination: EasyPassViewController?
+    public weak var captureOutputDestination: ScanningCodeController?
     
     /*!
      @property previewLayer

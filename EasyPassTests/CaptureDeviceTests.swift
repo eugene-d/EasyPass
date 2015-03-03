@@ -43,7 +43,6 @@ class CaptureDeviceTests: QuickSpec {
             }
             
             it("should should conform protocol") {
-//                expect(сaptureDevice).to(beAKindOf(AVCaptureMetadataOutputObjectsDelegate))
                 expect(сaptureDevice.respondsToSelector("captureOutput")).toNot(beNil())
             }
         }
