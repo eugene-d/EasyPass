@@ -17,8 +17,8 @@ class ScanningHistroryControllerTests: QuickSpec {
                 controller = storyboard.instantiateViewControllerWithIdentifier(self.controllerIdentifier) as ScanningHistoryController
             }
             
-            it("it shoud be UIViewController") {
-                expect(controller).to(beAKindOf(UIViewController))
+            it("it shoud be UITableViewController") {
+                expect(controller).to(beAKindOf(UITableViewController))
             }
         }
     }

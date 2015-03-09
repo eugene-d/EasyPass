@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class ScanningHistoryController: UIViewController, ScanningViewController {
+public class ScanningHistoryController: UITableViewController, ScanningViewController {
     required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         

@@ -26,37 +26,6 @@
             </objects>
             <point key="canvasLocation" x="197" y="324"/>
         </scene>
-        <!--Scannin History-->
-        <scene sceneID="qyP-Uz-X3z">
-            <objects>
-                <viewController storyboardIdentifier="ScanningHistoryController" title="Scannin History" id="jDc-1M-Xzt" customClass="ScanningHistoryController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Bn-VT-nzX"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZWw-jm-EDd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ARF-JT-1M3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onM-XB-BUM">
-                                <rect key="frame" x="235" y="290" width="131" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="onM-XB-BUM" secondAttribute="centerX" id="GMD-xs-Uz9"/>
-                            <constraint firstAttribute="centerY" secondItem="onM-XB-BUM" secondAttribute="centerY" id="aMn-pv-7f8"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" id="N5d-JF-owg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2TR-vF-1dN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1799" y="769"/>
-        </scene>
         <!--Scanning Code-->
         <scene sceneID="XYP-AD-Dcp">
             <objects>
@@ -88,6 +57,33 @@
             </objects>
             <point key="canvasLocation" x="1799" y="-27"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="VOO-5d-Ilt">
+            <objects>
+                <tableViewController storyboardIdentifier="ScanningHistoryController" id="4VL-aT-vGf" customClass="ScanningHistoryController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CPH-e5-rlA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cfW-uu-h3A">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cfW-uu-h3A" id="WIk-JA-6lI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4VL-aT-vGf" id="8xf-bZ-xrm"/>
+                            <outlet property="delegate" destination="4VL-aT-vGf" id="seo-73-HN8"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="qHh-cM-kUh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Epk-xq-wwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792" y="766"/>
+        </scene>
         <!--Scanning Controller-->
         <scene sceneID="fKr-ji-eoX">
             <objects>
@@ -100,7 +96,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="yel-ce-cdR" kind="relationship" relationship="viewControllers" id="McI-eW-5mt"/>
-                        <segue destination="jDc-1M-Xzt" kind="relationship" relationship="viewControllers" id="rk8-FN-Plx"/>
+                        <segue destination="4VL-aT-vGf" kind="relationship" relationship="viewControllers" id="4AT-e3-9Ub"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yod-XH-wuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
