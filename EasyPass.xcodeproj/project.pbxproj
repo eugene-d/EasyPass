@@ -23,6 +23,8 @@
 		5C8D86361A8E0EC200638AD9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D861C1A8E0E5B00638AD9 /* Quick.framework */; };
 		5C8D86381A8E0EE300638AD9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D862F1A8E0E8F00638AD9 /* Nimble.framework */; };
 		5CA85E7E1A96660700CC804F /* CaptureDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */; };
+		5CC0B68A1AADD760007D545C /* ScanningHistroryControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0B6891AADD760007D545C /* ScanningHistroryControllerTests.swift */; };
+		5CD44B6D1AA7B307006A6013 /* ScanningHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */; };
 		5CEF4FB31A9779180092BA28 /* QRCodeFrameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +129,8 @@
 		5C8D86121A8E0E5A00638AD9 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureDeviceTests.swift; sourceTree = "<group>"; };
+		5CC0B6891AADD760007D545C /* ScanningHistroryControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningHistroryControllerTests.swift; sourceTree = "<group>"; };
+		5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningHistoryController.swift; sourceTree = "<group>"; };
 		5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeFrameViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +181,7 @@
 				5C0515131A8CCF7500CE8A6D /* EasyPassViewController.swift */,
 				5C0AD7871AA3A96600D9E5F3 /* ScanningController.swift */,
 				5C0AD7951AA4FAE700D9E5F3 /* ScanningCodeController.swift */,
+				5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */,
 				5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */,
 				5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */,
 				5C0515151A8CCF7500CE8A6D /* Main.storyboard */,
@@ -204,6 +209,7 @@
 				5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */,
 				5C0AD7931AA4F34B00D9E5F3 /* ScanningControllerTests.swift */,
 				5C0AD7971AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift */,
+				5CC0B6891AADD760007D545C /* ScanningHistroryControllerTests.swift */,
 			);
 			path = EasyPassTests;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 			files = (
 				5C10E0D41A8E3002000E4993 /* CaptureDevice.swift in Sources */,
 				5C0AD7881AA3A96600D9E5F3 /* ScanningController.swift in Sources */,
+				5CD44B6D1AA7B307006A6013 /* ScanningHistoryController.swift in Sources */,
 				5C0515141A8CCF7500CE8A6D /* EasyPassViewController.swift in Sources */,
 				5C0AD7961AA4FAE700D9E5F3 /* ScanningCodeController.swift in Sources */,
 				5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */,
@@ -438,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC0B68A1AADD760007D545C /* ScanningHistroryControllerTests.swift in Sources */,
 				5C0AD7981AA5A01A00D9E5F3 /* ScanningCodeControllerTests.swift in Sources */,
 				5C0AD7941AA4F34C00D9E5F3 /* ScanningControllerTests.swift in Sources */,
 				5C10E0C81A8E22DA000E4993 /* EasyPassViewControllerTests.swift in Sources */,

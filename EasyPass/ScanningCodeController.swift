@@ -1,6 +1,7 @@
 import UIKit
 
-public class ScanningCodeController: UIViewController {
+public class ScanningCodeController: UIViewController, ScanningViewController {
+    
     /*!
      @property captureDevice
     
@@ -17,8 +18,17 @@ public class ScanningCodeController: UIViewController {
     */
     lazy public var highlightQRCodeFrameView = QRCodeFrameView()
     
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        addTabBarItem()
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.navigationItem.title =
+            NSLocalizedString("Scan Code",  comment: "")
         
         view.layer.addSublayer(captureDevice.previewLayer)
         captureDevice.captureOutputDestination = self
@@ -35,5 +45,10 @@ public class ScanningCodeController: UIViewController {
     private func highlightQRCodeInFrame() {
         highlightQRCodeFrameView.highlightBox()
         view.addSubview(highlightQRCodeFrameView)
+    }
+    
+    public func addTabBarItem() {
+        let tabBarItem = UITabBarItem(tabBarSystemItem: .Search, tag: 0)
+        self.tabBarItem = tabBarItem
     }
 }

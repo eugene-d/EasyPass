@@ -5,6 +5,8 @@ import UIKit
 
 class ScanningCodeControllerTests: QuickSpec {
     
+    let controllerIdentifier = "ScanningCodeController"
+    
     class FakeCaptureDevice: CaptureDevice {
         var startCaptureWasCalled = false
         var frameToHighlightQRCodeWasCalled = false
@@ -32,8 +34,11 @@ class ScanningCodeControllerTests: QuickSpec {
             var controller: ScanningCodeController!
             
             beforeEach {
-                controller = ScanningCodeController()
+                let storyboard = UIStoryboard(name: "Main",
+                    bundle: NSBundle.mainBundle())
+                controller = storyboard.instantiateViewControllerWithIdentifier(self.controllerIdentifier) as ScanningCodeController
             }
+            
             it("it shoud be UIViewController") {
                 expect(controller).to(beAKindOf(UIViewController))
             }
