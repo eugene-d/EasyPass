@@ -21,14 +21,14 @@ public class ScanningCodeController: UIViewController, ScanningViewController {
     required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        self.title =
+            NSLocalizedString("Scan Code",  comment: "")
+        
         addTabBarItem()
     }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tabBarController?.navigationItem.title =
-            NSLocalizedString("Scan Code",  comment: "")
         
         view.layer.addSublayer(captureDevice.previewLayer)
         captureDevice.captureOutputDestination = self
@@ -47,7 +47,7 @@ public class ScanningCodeController: UIViewController, ScanningViewController {
         view.addSubview(highlightQRCodeFrameView)
     }
     
-    public func addTabBarItem() {
+    internal func addTabBarItem() {
         let tabBarItem = UITabBarItem(tabBarSystemItem: .Search, tag: 0)
         self.tabBarItem = tabBarItem
     }

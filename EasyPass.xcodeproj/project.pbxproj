@@ -24,6 +24,8 @@
 		5C8D86381A8E0EE300638AD9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8D862F1A8E0E8F00638AD9 /* Nimble.framework */; };
 		5CA85E7E1A96660700CC804F /* CaptureDeviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */; };
 		5CC0B68A1AADD760007D545C /* ScanningHistroryControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0B6891AADD760007D545C /* ScanningHistroryControllerTests.swift */; };
+		5CC0B6961AADEC83007D545C /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0B6951AADEC83007D545C /* ParkingLot.swift */; };
+		5CC0B6981AAEC5C7007D545C /* ParkingLots.nsarray in Resources */ = {isa = PBXBuildFile; fileRef = 5CC0B6971AAEC5C7007D545C /* ParkingLots.nsarray */; };
 		5CD44B6D1AA7B307006A6013 /* ScanningHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */; };
 		5CEF4FB31A9779180092BA28 /* QRCodeFrameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */; };
 /* End PBXBuildFile section */
@@ -130,6 +132,8 @@
 		5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		5CA85E7D1A96660700CC804F /* CaptureDeviceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureDeviceTests.swift; sourceTree = "<group>"; };
 		5CC0B6891AADD760007D545C /* ScanningHistroryControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningHistroryControllerTests.swift; sourceTree = "<group>"; };
+		5CC0B6951AADEC83007D545C /* ParkingLot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
+		5CC0B6971AAEC5C7007D545C /* ParkingLots.nsarray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParkingLots.nsarray; sourceTree = "<group>"; };
 		5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningHistoryController.swift; sourceTree = "<group>"; };
 		5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeFrameViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +188,7 @@
 				5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */,
 				5C10E0D31A8E3002000E4993 /* CaptureDevice.swift */,
 				5C2AA5DD1A95DDBF0093C5EE /* QRCodeFrameView.swift */,
+				5CC0B6951AADEC83007D545C /* ParkingLot.swift */,
 				5C0515151A8CCF7500CE8A6D /* Main.storyboard */,
 				5C0515181A8CCF7500CE8A6D /* Images.xcassets */,
 				5C05151A1A8CCF7500CE8A6D /* LaunchScreen.xib */,
@@ -196,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				5C0515101A8CCF7500CE8A6D /* Info.plist */,
+				5CC0B6971AAEC5C7007D545C /* ParkingLots.nsarray */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 				5C0515171A8CCF7500CE8A6D /* Main.storyboard in Resources */,
 				5C05151C1A8CCF7500CE8A6D /* LaunchScreen.xib in Resources */,
 				5C0515191A8CCF7500CE8A6D /* Images.xcassets in Resources */,
+				5CC0B6981AAEC5C7007D545C /* ParkingLots.nsarray in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +444,7 @@
 				5C0515141A8CCF7500CE8A6D /* EasyPassViewController.swift in Sources */,
 				5C0AD7961AA4FAE700D9E5F3 /* ScanningCodeController.swift in Sources */,
 				5C0515121A8CCF7500CE8A6D /* AppDelegate.swift in Sources */,
+				5CC0B6961AADEC83007D545C /* ParkingLot.swift in Sources */,
 				5C2AA5DE1A95DDBF0093C5EE /* QRCodeFrameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

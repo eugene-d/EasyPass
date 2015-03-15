@@ -2,7 +2,7 @@ import UIKit
 
 protocol ScanningViewController: class {
     /*!
-     @method Add tabBarItem to a ciew and cofigure it.
+     @method Add tabBarItem to a view and cofigure it.
     */
     func addTabBarItem()
 }
@@ -15,7 +15,21 @@ public class ScanningController: UITabBarController, UITabBarControllerDelegate 
         self.delegate = self
     }
     
-    public func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
-        tabBarController.navigationItem.title = viewController.title
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        if viewControllers?.count > 0 {
+            self.navigationItem.title = viewControllers?[0].title
+        }
+    }
+    
+    public func tabBarController(tabBarController: UITabBarController,
+        didSelectViewController viewController: UIViewController) {
+        var destination = viewController
+        
+        if let vc = destination as? UINavigationController {
+            destination = vc.visibleViewController
+        }
+        
+        tabBarController.navigationItem.title = destination.title
     }
 }

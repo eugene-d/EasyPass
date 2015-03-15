@@ -5,17 +5,17 @@ import UIKit
 */
 public class EasyPassViewController: UIViewController {
     
-    public override func viewDidLoad() {
-        super.viewDidLoad()
+    func scanCode(sender: UIBarButtonItem) {
+        performSegueWithIdentifier("Scanning", sender: nil)
+    }
+    
+    public required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: NSLocalizedString("Scan Code", comment: ""),
             style: .Plain,
             target: self,
             action: "scanCode:")
-    }
-    
-    func scanCode(sender: UIBarButtonItem) {
-        performSegueWithIdentifier("Scanning", sender: nil)
     }
 }

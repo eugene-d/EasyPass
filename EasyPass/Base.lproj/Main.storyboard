@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="90B-Kq-nzx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="90B-Kq-nzx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Easy Pass View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EasyPassViewController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EasyPassViewController" id="BYZ-38-t0r" customClass="EasyPassViewController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="197" y="324"/>
         </scene>
-        <!--Scanning Code-->
+        <!--Scanning Code Controller-->
         <scene sceneID="XYP-AD-Dcp">
             <objects>
-                <viewController storyboardIdentifier="ScanningCodeController" title="Scanning Code" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yel-ce-cdR" customClass="ScanningCodeController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScanningCodeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yel-ce-cdR" customClass="ScanningCodeController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bko-rK-0JI"/>
                         <viewControllerLayoutGuide type="bottom" id="qxI-La-WIE"/>
@@ -57,16 +57,17 @@
             </objects>
             <point key="canvasLocation" x="1799" y="-27"/>
         </scene>
-        <!--Scanning History-->
+        <!--Scanning History Controller-->
         <scene sceneID="VOO-5d-Ilt">
             <objects>
-                <tableViewController storyboardIdentifier="ScanningHistoryController" title="Scanning History" id="4VL-aT-vGf" customClass="ScanningHistoryController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CPH-e5-rlA">
+                <tableViewController storyboardIdentifier="ScanningHistoryController" id="4VL-aT-vGf" customClass="ScanningHistoryController" customModule="EasyPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" id="CPH-e5-rlA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScanningHistoryCell" textLabel="cbr-II-OkE" detailTextLabel="os6-Yc-eCs" style="IBUITableViewCellStyleSubtitle" id="cfW-uu-h3A">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScanningHistoryCell" textLabel="cbr-II-OkE" detailTextLabel="5Ok-sy-bPM" rowHeight="66" style="IBUITableViewCellStyleSubtitle" id="cfW-uu-h3A">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cfW-uu-h3A" id="WIk-JA-6lI">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -77,7 +78,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="os6-Yc-eCs">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Ok-sy-bPM">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -92,11 +93,11 @@
                             <outlet property="delegate" destination="4VL-aT-vGf" id="seo-73-HN8"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="qHh-cM-kUh"/>
+                    <navigationItem key="navigationItem" id="Sr2-AW-sDL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Epk-xq-wwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792" y="766"/>
+            <point key="canvasLocation" x="2604" y="766"/>
         </scene>
         <!--Scanning Controller-->
         <scene sceneID="fKr-ji-eoX">
@@ -110,7 +111,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="yel-ce-cdR" kind="relationship" relationship="viewControllers" id="McI-eW-5mt"/>
-                        <segue destination="4VL-aT-vGf" kind="relationship" relationship="viewControllers" id="4AT-e3-9Ub"/>
+                        <segue destination="mdh-K7-kNh" kind="relationship" relationship="viewControllers" id="4AT-e3-9Ub"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yod-XH-wuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,6 +135,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FU6-Hg-0ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="176" y="324"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="1xo-ga-ehM">
+            <objects>
+                <navigationController storyboardIdentifier="TabBarToScanningHistoryController" automaticallyAdjustsScrollViewInsets="NO" id="mdh-K7-kNh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qHh-cM-kUh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vfX-1b-wSf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4VL-aT-vGf" kind="relationship" relationship="rootViewController" id="7ao-l8-9E2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTG-y4-Q1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792" y="766"/>
         </scene>
     </scenes>
 </document>

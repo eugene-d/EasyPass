@@ -43,10 +43,6 @@ class ScanningCodeControllerTests: QuickSpec {
                 expect(controller).to(beAKindOf(UIViewController))
             }
             
-            it("should provide viewDidLoad method") {
-                expect(controller.viewDidLoad).toNot(beNil())
-            }
-            
             it("should set itself as delegate to capture device") {
                 controller.viewDidLoad()
                 expect(controller.captureDevice.captureOutputDestination)
