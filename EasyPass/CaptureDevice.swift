@@ -23,23 +23,20 @@ public class CaptureDevice: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     public weak var captureOutputDestination: ScanningCodeController?
     
     /*!
-     @property previewLayer
+     @property previewLayer VideoPreviewLayer
     
      @brief
         Computed property to get AVCaptureVideoPreviewLayer layer.
     */
-    public var previewLayer: AVCaptureVideoPreviewLayer {
-        get {
-            let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession);
-            previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-            return previewLayer
-        }
-    }
+    public var previewLayer: AVCaptureVideoPreviewLayer!
     
     public override init() {
         super.init()
         captureSession = AVCaptureSession()
         inputDeviceForSession()
+        
+        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         
         if availableInputDevices().count > 0 {
             outputDeviceForSession()
@@ -84,19 +81,19 @@ public class CaptureDevice: NSObject, AVCaptureMetadataOutputObjectsDelegate {
         var frame: CGRect = CGRectZero
         var message: String?
         
-        if metadataObjects != nil || metadataObjects.count != 0 {
+        if metadataObjects != nil && metadataObjects.count != 0 {
             let metadataObj = metadataObjects[0] as AVMetadataMachineReadableCodeObject
             
             if metadataObj.type == AVMetadataObjectTypeQRCode {
-                let barCodeObject  = self.previewLayer.transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject) as AVMetadataMachineReadableCodeObject
+                let barCodeObject  = previewLayer
+                    .transformedMetadataObjectForMetadataObject(metadataObj as AVMetadataMachineReadableCodeObject)
+                            as AVMetadataMachineReadableCodeObject
                 frame = barCodeObject.bounds;
-                //                highlightQRCodeFrameView.frame = barCodeObject.bounds
                 
                 message = metadataObj.stringValue
             }
-            
-            captureOutputDestination?.highlightQRCodeFrameView.frame = frame
         }
+        captureOutputDestination?.highlightQRCodeFrameView.frame = frame
     }
     
     /*!

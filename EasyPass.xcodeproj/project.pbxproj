@@ -108,6 +108,20 @@
 			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
 			remoteInfo = "Nimble-OSXTests";
 		};
+		B308A1DA4768DD94039DE03D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B308A053E5888CBA5D9024BA /* EasyPass.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C05150C1A8CCF7500CE8A6D;
+			remoteInfo = EasyPass;
+		};
+		B308AAEFE0211C884CC53842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B308A053E5888CBA5D9024BA /* EasyPass.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C0515211A8CCF7500CE8A6D;
+			remoteInfo = EasyPassTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +150,7 @@
 		5CC0B6971AAEC5C7007D545C /* ParkingLots.nsarray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParkingLots.nsarray; sourceTree = "<group>"; };
 		5CD44B6C1AA7B307006A6013 /* ScanningHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningHistoryController.swift; sourceTree = "<group>"; };
 		5CEF4FB21A9779180092BA28 /* QRCodeFrameViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeFrameViewTests.swift; sourceTree = "<group>"; };
+		B308A053E5888CBA5D9024BA /* EasyPass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = EasyPass.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +181,7 @@
 				5C05150E1A8CCF7500CE8A6D /* EasyPass */,
 				5C0515241A8CCF7500CE8A6D /* EasyPassTests */,
 				5C05150D1A8CCF7500CE8A6D /* Products */,
+				B308A053E5888CBA5D9024BA /* EasyPass.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +270,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B308A12CF223659A2EC8C4D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B308A6ABE62B883E76E8875E /* EasyPass.app */,
+				B308A4ECBDABA37019DF2E9A /* EasyPassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +328,7 @@
 				TargetAttributes = {
 					5C05150B1A8CCF7500CE8A6D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = U8333665R6;
 					};
 					5C0515201A8CCF7500CE8A6D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -322,6 +348,10 @@
 			productRefGroup = 5C05150D1A8CCF7500CE8A6D /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = B308A12CF223659A2EC8C4D2 /* Products */;
+					ProjectRef = B308A053E5888CBA5D9024BA /* EasyPass.xcodeproj */;
+				},
 				{
 					ProductGroup = 5C8D86281A8E0E8F00638AD9 /* Products */;
 					ProjectRef = 5C8D86271A8E0E8F00638AD9 /* Nimble.xcodeproj */;
@@ -408,6 +438,20 @@
 			fileType = wrapper.cfbundle;
 			path = NimbleTests.xctest;
 			remoteRef = 5C8D86341A8E0E8F00638AD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B308A4ECBDABA37019DF2E9A /* EasyPassTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EasyPassTests.xctest;
+			remoteRef = B308AAEFE0211C884CC53842 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B308A6ABE62B883E76E8875E /* EasyPass.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = EasyPass.app;
+			remoteRef = B308A1DA4768DD94039DE03D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -575,6 +619,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alexander Vasileyko (TH7G96RYJJ)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = EasyPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -586,6 +632,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alexander Vasileyko (TH7G96RYJJ)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = EasyPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -30,7 +30,9 @@ public class ScanningCodeController: UIViewController, ScanningViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
+        captureDevice.previewLayer.frame = view.layer.bounds
         view.layer.addSublayer(captureDevice.previewLayer)
+        
         captureDevice.captureOutputDestination = self
         captureDevice.startScanning()
         highlightQRCodeInFrame()
@@ -45,6 +47,7 @@ public class ScanningCodeController: UIViewController, ScanningViewController {
     private func highlightQRCodeInFrame() {
         highlightQRCodeFrameView.highlightBox()
         view.addSubview(highlightQRCodeFrameView)
+        view.bringSubviewToFront(highlightQRCodeFrameView)
     }
     
     internal func addTabBarItem() {
